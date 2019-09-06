@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # resume
 
 > A Vue.js project
@@ -19,3 +20,7 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+# wenjian
+123
+>>>>>>> ba71b16bb9e33d1b2d4f6de7c2a73b57f8e68863
