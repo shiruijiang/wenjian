@@ -1,14 +1,6 @@
 <template>
   <div id="app">
-    <div class="content">
-        <router-view/>
-        
-    </div>
-    
-    <div class="footer">
-    <router-link to="/" tag="li">主页</router-link>
-    <router-link to="/mine" tag="li">我的</router-link>
-    </div>
+    <router-view/>
   </div>
 </template>
 
@@ -19,6 +11,9 @@ export default {
 </script>
 
 <style>
+#text{
+  display: none
+}
 *{
   margin: 0;
   padding: 0;
@@ -31,19 +26,5 @@ html,body{
 #app {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.content{
-  width: 100%;
-  flex: 1;
-}
-.footer{
-  width: 100%;
-  height: 44px;
-  background: lightblue;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 </style>

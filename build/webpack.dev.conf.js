@@ -45,7 +45,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     },
     before(app){
       app.get('/api/data',(req,res)=>{
-        let data =require('../mock/data.json')
+        let data =require('../mock/shop.json')
         console.log(data)
         res.send(data)
       })

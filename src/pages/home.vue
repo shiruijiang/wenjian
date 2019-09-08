@@ -1,67 +1,59 @@
 <template>
-    <div>
-        <Vswiper/>
-        <div class="item">
-          <dl>
-            <dt><i class="el-icon-s-shop"></i></dt>
-            <dd>成单奖励</dd>
-          </dl>
-          <dl>
-            <dt><i class="el-icon-s-shop"></i></dt>
-            <dd>成单奖励</dd>
-          </dl>
-          <dl>
-            <dt><i class="el-icon-s-shop"></i></dt>
-            <dd>成单奖励</dd>
-          </dl>
-          <dl>
-            <dt><i class="el-icon-s-shop"></i></dt>
-            <dd>成单奖励</dd>
-          </dl>
+    <div class="box">
+        <header class="header">
+            头部
+        </header>
+        <div class="content">
+            <ul>
+            <router-link to="/home/diancai" tag="li">点菜</router-link>
+            <router-link to="/home/pingjia" tag="li">评价</router-link>
+            <router-link to="/home/shangjia" tag="li">商家</router-link></ul>
+           <div class="list"><router-view /></div> 
         </div>
-        <div class="item">
-          <dl>
-            <dt><i class="el-icon-s-shop"></i></dt>
-            <dd>成单奖励</dd>
-          </dl>
-          <dl>
-            <dt><i class="el-icon-s-shop"></i></dt>
-            <dd>成单奖励</dd>
-          </dl>
-          <dl>
-            <dt><i class="el-icon-s-shop"></i></dt>
-            <dd>成单奖励</dd>
-          </dl>
-          <dl>
-            <dt><i class="el-icon-s-shop"></i></dt>
-            <dd>成单奖励</dd>
-          </dl>
-        </div>
+        <footer class="footer">
+            <span>数量</span>
+            <span>总价</span>
+        </footer>
     </div>
 </template>
 <style scoped>
-.item{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    margin-top: 10px;
-}
-.item dl{
-    width: 25%;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-}
-.item dl dt{
-    display: flex;
-    justify-content: space-around
-}
-.item dl dd{
-    display: flex;
-    justify-content: space-around
-}
-    dl dt i{
-        font-size: 50px
+    .box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        width: 100%;
+        height: 44px;
+        background: lightblue;
+    }
+    ul{
+        width: 100%;
+        height: 44px;
+        display: flex;
+    }
+    ul li{
+        flex: 1;
+        text-align: center;
+        line-height: 44px;
+    }
+    .list{
+        width: 100%;
+        height: 92%;
+    }
+    .router-link-active{
+        color: red;
+    }
+    .footer{
+        width: 100%;
+        height: 44px;
+        background: lightblue;
+    }
+    .content{
+        flex: 1;
+        width: 100%;
+        overflow: hidden;
     }
 </style>
 
